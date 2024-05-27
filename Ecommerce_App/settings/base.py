@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     #external packages
     'rest_framework',
     #internal_apps
+    'product.apps.ProductConfig'
+
 ]
 
 REST_FRAMEWORK = {}
