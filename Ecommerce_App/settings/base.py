@@ -46,12 +46,19 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #external packages
     'rest_framework',
+    'drf_spectacular',
     #internal_apps
     'product.apps.ProductConfig'
 
 ]
 
-REST_FRAMEWORK = {}
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Ecommerce Api'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
