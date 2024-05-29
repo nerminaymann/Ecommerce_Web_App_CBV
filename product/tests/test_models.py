@@ -1,7 +1,9 @@
+# import export
 import pytest
 
-from Ecommerce_App import settings
+import Ecommerce_App
 from Ecommerce_App.tests import factories
+# export DJANGO_SETTINGS_MODULE=mysite.settings
 
 # from django.conf import settings
 #

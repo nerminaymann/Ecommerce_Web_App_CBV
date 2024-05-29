@@ -12,6 +12,10 @@ class CategoryFactory(factory.django.DjangoModelFactory):
 
     name = 'test_category'
 
+    #WHEN (UNIQUE OF NAME IS TRUE):
+    # name = factory.sequence(lambda n: f'test_category_{n}')
+    # name = factory.Sequence(lambda n : 'test_category_%d' % n)
+
 class BrandFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Brand
